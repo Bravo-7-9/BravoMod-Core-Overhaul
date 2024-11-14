@@ -38,10 +38,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FEATHER_FLETCHING);
                         output.accept(ModItems.COPPER_VANES);
 
-                        output.accept(ModItems.WOOD_BARE_SHAFT);
                         output.accept(ModItems.BAMBOO_BARE_SHAFT);
-                        output.accept(ModItems.WOOD_FEATHER_FLETCHED_SHAFT);
+                        output.accept(ModItems.WOOD_BARE_SHAFT);
                         output.accept(ModItems.BAMBOO_FEATHER_FLETCHED_SHAFT);
+                        output.accept(ModItems.WOOD_FEATHER_FLETCHED_SHAFT);
                         output.accept(ModItems.WOOD_COPPER_FLETCHED_SHAFT);
                     }).build());
 

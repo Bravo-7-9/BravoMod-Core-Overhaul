@@ -65,13 +65,13 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
      */
 
-    public static final DeferredItem<Item> WOOD_BARE_SHAFT = ITEMS.register("wood_bare_shaft",
-            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BAMBOO_BARE_SHAFT = ITEMS.register("bamboo_bare_shaft",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> WOOD_FEATHER_FLETCHED_SHAFT = ITEMS.register("wood_feather_fletched_shaft",
+    public static final DeferredItem<Item> WOOD_BARE_SHAFT = ITEMS.register("wood_bare_shaft",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BAMBOO_FEATHER_FLETCHED_SHAFT = ITEMS.register("bamboo_feather_fletched_shaft",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> WOOD_FEATHER_FLETCHED_SHAFT = ITEMS.register("wood_feather_fletched_shaft",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> WOOD_COPPER_FLETCHED_SHAFT = ITEMS.register("wood_copper_fletched_shaft",
             () -> new Item(new Item.Properties()));
