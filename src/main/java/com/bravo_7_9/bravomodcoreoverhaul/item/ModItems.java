@@ -1,7 +1,7 @@
 package com.bravo_7_9.bravomodcoreoverhaul.item;
 
 import com.bravo_7_9.bravomodcoreoverhaul.BravoModCoreOverhaul;
-import net.minecraft.world.item.ArrowItem;
+import com.bravo_7_9.bravomodcoreoverhaul.item.custom.BoneBambooBareArrowItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -22,13 +22,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     /*
-    public static final DeferredItem<Item> CHERT_ARROWHEAD = ITEMS.register("chert_arrowhead",
-            () -> new Item(new Item.Properties())); // Requires Chert -> Requires geological worldgen overhaul
-
     public static final DeferredItem<Item> ALLIGATOR_GAR_SCALE_ARROWHEAD = ITEMS.register("alligator_gar_scale_arrowhead",
             () -> new Item(new Item.Properties())); // Requires Alligator Gar
-    */
-/*
+
+
     public static final DeferredItem<Item> CROSSBOW_BOLT = ITEMS.register("crossbow_bolt",
             () -> new Item(new Item.Properties())); // Short metal bolt
 
@@ -46,7 +43,7 @@ public class ModItems {
     public static final DeferredItem<Item> CASE_HARDENED_FIXED_BLADE_BROADHEAD = ITEMS.register("case_hardened_fixed_blade_broadhead",
             () -> new Item(new Item.Properties()));
 
-    /*
+
     // Modern Arrowheads
     public static final DeferredItem<Item> MECHANICAL_BROADHEAD = ITEMS.register("mechanical_broadhead",
             () -> new Item(new Item.Properties())); // Requires Springs
@@ -75,6 +72,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> WOOD_COPPER_FLETCHED_SHAFT = ITEMS.register("wood_copper_fletched_shaft",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> BONE_BAMBOO_BARE_ARROW = ITEMS.register("bone_bamboo_bare_arrow",
+            () -> new BoneBambooBareArrowItem(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

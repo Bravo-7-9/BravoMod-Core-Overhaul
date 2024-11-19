@@ -18,6 +18,10 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    /*maven {
+        url = 'https://maven.blamejared.com'
+        name = 'BlameJared Maven'
+    }*/
 }
 
 base {
@@ -133,6 +137,10 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
+    // implementation('com.blamejared.crafttweaker:CraftTweaker-neoforge-1.21.1:21.0.0')
+    // Example:
+    // implementation('com.blamejared.crafttweaker:CraftTweaker-neoforge-1.21.1:21.0.0')
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

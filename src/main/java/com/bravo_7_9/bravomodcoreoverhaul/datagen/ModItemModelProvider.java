@@ -27,5 +27,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.WOOD_FEATHER_FLETCHED_SHAFT.get());
         basicItem(ModItems.BAMBOO_FEATHER_FLETCHED_SHAFT.get());
         basicItem(ModItems.WOOD_COPPER_FLETCHED_SHAFT.get());
+
+        basicItem(ModItems.BONE_BAMBOO_BARE_ARROW.get());
     }
 }

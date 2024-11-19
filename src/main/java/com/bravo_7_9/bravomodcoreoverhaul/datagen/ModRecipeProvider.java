@@ -19,18 +19,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ModItems.BAMBOO_BARE_SHAFT, 1)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, ModItems.FEATHER_FLETCHING, 1)
+                .requires((Items.FEATHER)).requires(Items.FLINT)
+                        .unlockedBy("has_feather", has(Items.FEATHER)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, ModItems.BAMBOO_BARE_SHAFT.get(), 1)
                 .requires(Items.BAMBOO).requires(Items.FLINT)
                 .unlockedBy("has_bamboo", has(Items.BAMBOO)).save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ModItems.WOOD_BARE_SHAFT,1)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, ModItems.WOOD_BARE_SHAFT.get(),1)
                 .requires(Items.STICK).requires(Items.FLINT)
                 .unlockedBy("has_stick", has(Items.STICK)).save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ModItems.BAMBOO_FEATHER_FLETCHED_SHAFT,1)
-                .requires(ModItems.BAMBOO_BARE_SHAFT).requires(Items.FEATHER)
-                .unlockedBy("has_bamboo_bare_shaft", has(ModItems.BAMBOO_BARE_SHAFT)).save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ModItems.WOOD_FEATHER_FLETCHED_SHAFT,1)
-                .requires(ModItems.WOOD_FEATHER_FLETCHED_SHAFT).requires(Items.FEATHER)
-                .unlockedBy("has_wood_bare_shaft", has(ModItems.WOOD_BARE_SHAFT)).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, ModItems.BAMBOO_FEATHER_FLETCHED_SHAFT.get(),1)
+                .requires(ModItems.BAMBOO_BARE_SHAFT.get()).requires(ModItems.FEATHER_FLETCHING.get())
+                .unlockedBy("has_bamboo_bare_shaft", has(ModItems.BAMBOO_BARE_SHAFT.get())).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, ModItems.WOOD_FEATHER_FLETCHED_SHAFT.get(),1)
+                .requires(ModItems.WOOD_FEATHER_FLETCHED_SHAFT.get()).requires(ModItems.FEATHER_FLETCHING.get())
+                .unlockedBy("has_wood_bare_shaft", has(ModItems.WOOD_BARE_SHAFT.get())).save(recipeOutput);
 
     }
 }

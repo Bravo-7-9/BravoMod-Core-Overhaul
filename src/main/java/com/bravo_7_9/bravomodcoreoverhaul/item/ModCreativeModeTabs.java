@@ -43,6 +43,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BAMBOO_FEATHER_FLETCHED_SHAFT);
                         output.accept(ModItems.WOOD_FEATHER_FLETCHED_SHAFT);
                         output.accept(ModItems.WOOD_COPPER_FLETCHED_SHAFT);
+
+                        output.accept(ModItems.BONE_BAMBOO_BARE_ARROW);
                     }).build());
 
 

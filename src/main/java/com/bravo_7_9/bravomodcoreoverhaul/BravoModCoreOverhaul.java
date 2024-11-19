@@ -1,7 +1,9 @@
 package com.bravo_7_9.bravomodcoreoverhaul;
 
+import com.bravo_7_9.bravomodcoreoverhaul.client.ClientModEventSubscriber;
 import com.bravo_7_9.bravomodcoreoverhaul.item.ModCreativeModeTabs;
 import com.bravo_7_9.bravomodcoreoverhaul.item.ModItems;
+import com.bravo_7_9.bravomodcoreoverhaul.world.entity.ModEntityType;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -60,6 +62,7 @@ public class BravoModCoreOverhaul
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModEntityType.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
